@@ -13,6 +13,7 @@ describe('My simple CI', function() {
     request
       .get('/')
       .expect(200)
+      .expect('Content-Type', /text\/html/)
       .end(function(err, res) {
         if(err) throw err;
         res.text.should.contain('Rishi Seetha');
