@@ -46,5 +46,5 @@ of factor but for this example we're doing a simple: Push update -> Test -> Depl
 
 
 #### Bonus: TravisCI build screenshot
-![img](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/Screen+Shot+2018-08-22+at+12.24.45+am.png)
-[Alt Link](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/Screen+Shot+2018-08-22+at+12.24.45+am.png)
+![img](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/travis-build.png)
+[Alt Link](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/travis-build.png)
