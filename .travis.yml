@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - node
+before_script:
+  - export PORT=3000
 deploy:
   provider: heroku
   api_key:
