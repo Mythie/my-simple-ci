@@ -2,7 +2,9 @@ language: node_js
 node_js:
   - node
 before_script:
-  - export PORT=3000
+  - echo "We could do something here"
+after_success:
+  - echo "We could hook a custom deployment here"
 deploy:
   provider: heroku
   api_key:

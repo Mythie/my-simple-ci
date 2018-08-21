@@ -16,6 +16,8 @@ By default TravisCI will just run the languages default testing script if applic
 script:
   - "do something"
 ```
+In the case of our little project travis will run `npm test` which will trigger our test runner [Mocha](https://mochajs.org/) that will perform the tests in our `tests/test.js` file.
+
 **3. TravisCI will perform these tasks and move onto the deployment stage if successful.**
 
 If all the tests passed which is signified by the program exiting with a 0 code Travis will move on to any of the later stages of the pipeline.
