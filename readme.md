@@ -1,4 +1,8 @@
 # My Simple CI
+
+[![Build Status](https://travis-ci.org/Mythie/my-simple-ci.svg?branch=master)](https://travis-ci.org/Mythie/my-simple-ci)
+
+
 My simple CI is just a very basic example of how can utilise a CI pipeline in order to enhance their builds.
 For this example we use CI to run our testing suite which will test our code and then promote the code to production if
 successful.
@@ -39,3 +43,7 @@ See [Travis Documentation](https://docs.travis-ci.com/user/customizing-the-build
 
 This is the final stage, more can be added inbetween or expanded upon with room to move it to development, testing and staging environments based on a number
 of factor but for this example we're doing a simple: Push update -> Test -> Deploy to Prod
+
+
+#### Bonus: TravisCI build screenshot
+![img](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/Screen+Shot+2018-08-22+at+12.24.45+am.png)
