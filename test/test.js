@@ -1,6 +1,6 @@
 const mocha = require('mocha');
 const chai = require('chai');
-const request = require('supertest').agent('http://localhost:3000');
+const request = require('supertest').agent('http://localhost:${process.env.PORT}');
 const express = require('express');
 var app = require('../app');
 const expect = chai.expect;
