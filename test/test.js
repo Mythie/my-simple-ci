@@ -1,8 +1,9 @@
 const mocha = require('mocha');
 const chai = require('chai');
-const request = require('supertest').agent('http://localhost:${process.env.PORT || 8080}');
+const port = process.env.PORT || '8080';
 const express = require('express');
 var app = require('../app');
+const request = require('supertest').agent('http://localhost:' + port);
 const expect = chai.expect;
 const assert = chai.assert;
 const should = chai.should();
