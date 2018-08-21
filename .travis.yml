@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - node
+  - 10
+deploy:
+  provider: heroku
+  api_key:
+    secure: LsKquRBzygmyvCSP74qNQXkGXEPDwfEp47IWW8E1XIcGFF8d+q7zWOAZnXzRSetRPI1A0KR96JuGRC85dc6MZRAmDRngVYFeV7IO729c3sJWznUehADO2WR+iFinTRn4RZwq3CZfgU+kx7+TAri3vrC2GtyrFq1brhzd762dUN0FAf4p++DKjkJBawb/lpkiR0LokT939WH83X8R99k4Dbscut5TCgjl2aNmWiN3wdij8zqJS+97Lh5VD2QjuFxQXFdbBPv0dLeFm/++AXIONFdKhBamSMdjBOQT1iW+5S1psaEJvBb1RX4vPDVHIJsqaGNlTsQd5Ef5QmPR72COGPOoXlwmk7IrN8+olEizkY+5QxToda0k9JnuYLpsgA5QALiv6sIQm3HAfy66PJJbchegqfqUw6oUcBl1rFNO0NFQGZjYzmmILhW1UYvm4MF0jlu9VuRVN5e3baQUUhd93WDg8COusl4o6z4QTLjAovCFeigbaCFtkcUH4PsF6DuicDOLO8WQwPbqshfMjQOtPUsj2cGS4Gbe+Gxj2TBoHUYUCzrjJ8FBWRkU+wUWa3yCbHnz5n/FnNh+h+upkTCdIHQUt/+SdzjfhgqnJScSNfigfWiZvydX4tR47zdSWTPh8Vn0qzUYC//D3pQkSEkzAYAiqBVqgGzXdkaqm8rODK0=
+  app: my-simple-ci
