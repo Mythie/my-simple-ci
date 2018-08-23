@@ -76,11 +76,13 @@ curl -L0 https://github.com/Mythie/my-simple-ci/archive/master.zip -o master.zip
 **3. Initialize a new git repo**
 
 ![create-empty-repo](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/create-empty-repo.png)
+[Alt Link](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/create-empty-repo.png)
 
 Inside the folder containing the project run `git init` to initialize a new Git repo, then create an empty repository on github and add it as a remote.
 `git remote add origin git@github.com:USERNAME/GITREPO.git`
 
 ![created-empty-repo](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/blank-repo.png)
+[Alt Link](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/blank-repo.png)
 
 **4. Create your first commit**
 
@@ -100,12 +102,14 @@ Instructions on installing the command line tools can be found [here](https://gi
 * [Get your API key](https://dashboard.heroku.com/account).
 
 ![API Key image](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/heroku-api-key.png)
+[Alt Link](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/heroku-api-key.png)
 
 **7. Tell TravisCI to watch your repo**
 
 Go to [TravisCI](https://travis-ci.org/) and click on the "+" symbol next to "My Repositories", from there check the Repository you want Travis to watch like the image below.
 
 ![Repo checklist image](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/travis-repo-list.png)
+[Alt Link](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/travis-repo-list.png)
 
 **8. Encrypt the API key using TravisCI command line tools**
 
