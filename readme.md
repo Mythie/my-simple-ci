@@ -70,10 +70,10 @@ wget https://github.com/Mythie/my-simple-ci/archive/master.zip
 curl -L0 https://github.com/Mythie/my-simple-ci/archive/master.zip -o master.zip
 ```
 
-**2. Unzip the downloaded file to your projects directory.**
+**4. Unzip the downloaded file to your projects directory.**
 
 
-**3. Initialize a new git repo**
+**5. Initialize a new git repo**
 
 ![create-empty-repo](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/create-empty-repo.png)
 [Alt Link](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/create-empty-repo.png)
@@ -84,7 +84,7 @@ Inside the folder containing the project run `git init` to initialize a new Git 
 ![created-empty-repo](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/blank-repo.png)
 [Alt Link](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/blank-repo.png)
 
-**4. Create your first commit**
+**6. Create your first commit**
 
 This can be achieved by running `git add .` to add all untracked files (Files we've updated).
 
@@ -92,11 +92,11 @@ Then we run `git commit -m "Our first commit"` to commit the changes to our loca
 
 Finally we run `git push -u origin master` to push the changes to origin (Your Github repo) on branch master (The main branch).
 
-**5. Install the TravisCI command line tools**
+**7. Install the TravisCI command line tools**
 
 Instructions on installing the command line tools can be found [here](https://github.com/travis-ci/travis.rb#installation).
 
-**6. Create a project on Heroku and get your API key.**
+**8. Create a project on Heroku and get your API key.**
 
 * [Create a new app](https://dashboard.heroku.com/new-app).
 * [Get your API key](https://dashboard.heroku.com/account).
@@ -104,20 +104,20 @@ Instructions on installing the command line tools can be found [here](https://gi
 ![API Key image](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/heroku-api-key.png)
 [Alt Link](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/heroku-api-key.png)
 
-**7. Tell TravisCI to watch your repo**
+**9. Tell TravisCI to watch your repo**
 
 Go to [TravisCI](https://travis-ci.org/) and click on the "+" symbol next to "My Repositories", from there check the Repository you want Travis to watch like the image below.
 
 ![Repo checklist image](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/travis-repo-list.png)
 [Alt Link](https://s3-ap-southeast-2.amazonaws.com/lucasjamessmith.me/travis-repo-list.png)
 
-**8. Encrypt the API key using TravisCI command line tools**
+**10. Encrypt the API key using TravisCI command line tools**
 
 This can be achieved by running `travis encrypt "api-key-string" -a deploy.api_key`.
 
 This command will encrypt the string and replace the deploy.api_key in the `.travis.yml` file with the value it creates.
 
-**9. Change the .travis.yml App Name to match your application on Heroku**
+**11. Change the .travis.yml App Name to match your application on Heroku**
 
 In the .travis.yml change 
 ```yaml
@@ -137,7 +137,7 @@ deploy:
   app: My-Application-Name <---
 ```
 
-**10. Commit your changes!**
+**12. Commit your changes!**
 
 After following these steps and creating a new commit using the `git add .`, `git commit -m "message"` and `git push -u origin master` commands you should be able to see [Travis](https://travis-ci.org) performing testing on your repo before deploying to Heroku if successful.
 
